@@ -15,5 +15,8 @@
     "shiftr.io",
     "arduino"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
 }
