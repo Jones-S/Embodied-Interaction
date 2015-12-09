@@ -1,0 +1,19 @@
+{
+  "name": "Embodied Interaction",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Jones-S/Embodied-Interaction",
+  "authors": [
+    "Jones <jonas.scheiwiller@zhdk.ch>"
+  ],
+  "description": "Embodied Interaction – ZHdK IAD",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "shiftr",
+    "shiftr.io",
+    "arduino"
+  ],
+  "license": "MIT"
+}
