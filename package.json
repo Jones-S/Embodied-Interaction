@@ -1,0 +1,17 @@
+{
+  "name": "Shiftr",
+  "version": "1.0.0",
+  "description": "Shiftr Shittr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shift"
+  ],
+  "author": "jonas",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^1.6.0"
+  }
+}
