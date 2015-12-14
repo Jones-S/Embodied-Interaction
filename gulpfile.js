@@ -12,7 +12,7 @@ var plumber = require('gulp-plumber');
 
 // Asset paths
 var paths = {
-  sass:                     ['scss/*.scss'],
+  sass:                     'scss/*.scss',
   css:                      'css',
   js:                       'js/*.js',
   js_dist:                  'js/dist/'
@@ -61,7 +61,6 @@ gulp.task('concatenate', function() {
                 // 'bower_components/angular-animate/angular-animate.min.js',
                 // 'bower_components/hammerjs/hammer.js',
                 // 'bower_components/AngularHammer/angular.hammer.js',
-                // 'bower_components/d3/d3.min.js',
                 // 'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
                 paths['js']
             ])
@@ -79,6 +78,7 @@ gulp.task('concatenate', function() {
 // concat gulp task
 gulp.task('concatthirdparty', function() {
     return gulp.src([
+                'bower_components/d3/d3.min.js',
                 'bower_components/jquery/dist/jquery.min.js',
                 'js/3rdparty/mqtt-1.4.0.js'
             ])

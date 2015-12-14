@@ -6,7 +6,7 @@ var csv = require('csv');
 
 var fs = require("fs");
 var path = "data.txt";
-var data = "GSR Data: \n";
+var data = "Time Stamp, GSR-value,\n";
 
 fs.writeFile(path, data, function(error) {
      if (error) {
@@ -58,7 +58,7 @@ client.on('message', function(topic, message) {
                 + currentdate.getHours() + ":"
                 + currentdate.getMinutes() + ":"
                 + currentdate.getSeconds();
-    fs.appendFile('data.txt',  datetime + ": \t" + message.toString().trim() + "\n", function (err) {
+    fs.appendFile('data.txt',  datetime + ",\t" + message.toString().trim() + "\n", function (err) {
 
     });
 
